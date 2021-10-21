@@ -295,6 +295,7 @@ div.body.works section{
 }
 
 div.herobanner{
+  background: url(https://netology.ru/blog/wp-content/uploads/2021/04/christopher-gower-m_HRfLhgABo-unsplash-1-1-1.jpg);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,23 +304,7 @@ div.herobanner{
   height: 94vh;
   position:relative;
   z-index:6;
-}
-div.herobanner .bg{
-    background: url(https://netology.ru/blog/wp-content/uploads/2021/04/christopher-gower-m_HRfLhgABo-unsplash-1-1-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 0vw;
-    margin-top: 0;
-    height: 600px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 100%;
-    width: 100%;
-    height: 100%;
-    filter: brightness(22%);
-    display: block;
+  filter: brightness(87%);
 }
 div.heroblock{
     position: inherit;
@@ -330,7 +315,7 @@ div.heroblock{
 div.herotext{
    
     text-shadow: -3px 3px 0px black, -1px -4px 3px #0a0909;
-    /* background: #1e31ff3d; */
+    background: #1e31ff3d;
     margin: 0 10vw;
     border-radius: 61px;
     padding: 1vh 0;
