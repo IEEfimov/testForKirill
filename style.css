@@ -4,22 +4,90 @@
 
 body{
    font-family: 'Balsamiq Sans', cursive;
-    padding-top:0;
+   padding-top:0;
+   background-color: #edecec;
+   margin: 0;
+   letter-spacing: 1px;
+}
+body.works{
+    background-color: white;
+}
+nav.top, nav.top.works.indextop{
+    background-color: rgb(57 23 104 / 76%);
+    z-index: 20;
+    position: sticky;
+    top:0px;
+    padding-top: 0.3vh;
+}
+nav.top.indextop:hover{
+    background-color: rgb(57 23 104 / 89%);
+}
+nav.top:hover, nav.top.works:hover{
+    background-color: rgb(57 23 104 / 89%);
+}
+nav.indextop{
+    margin-bottom: 0 !important;
+}
+nav.top.indextop{
+    background-color: rgb(57 23 104 / 42%);
+}
+nav.top ul{
+   
+text-align: right;
+   
+margin-bottom: 0.1vh;
+   
+margin-top: 0.1vh;
+}
+
+nav.top li{
+   display: inline;
+   border-left: 1px solid black;
+   padding-left: 10px;
+   padding-bottom: 1vh;
+   margin-top: 1vh;
+}
+ nav.top {
+    padding-bottom: 1vh;
+    margin-bottom: 1.5vh;
+}
+nav.top li{
+    padding-bottom: 0;
     
-    background-color: #fcffc4;
-    
-    margin: 0;
-    letter-spacing: 1px;
+}
+ nav.top li:first-child{
+    border-left: none;
+    padding-left: none;
+}
+nav.top a:link,nav.top a:visited,
+nav.top a:active{
+    color: rgb(252, 228, 255);
+    text-decoration: none;
+}
+nav.top a:hover{
+    color:#ce42ff9c;
+    text-decoration: none;
+}
+div.topbody{
+    transform: translateY(-5vh);
 }
 .leftborder{
-    padding-left: 3vw;
+    /* padding-left: 3vw; */
     border-left: 3px dotted #1c23a8;
-    padding-top: 0.5vh;
-    position:fixed;
+    /* padding-top: 0.35vh; */
+    position: sticky;
     top: 0;
-    left: 2vw;
+    left: -1vw;
     z-index:5;
-    width: 1vh;
+    width: 1vw;
+    height: 94vh;
+    display: inline-block;
+    float:left;
+    margin-left: 1vw;
+    margin-top: 0;
+}
+
+.leftborder.full{
     height: 100vh;
 }
 
@@ -27,25 +95,37 @@ nav.timetable{
     position:sticky;
     top: 11vh;
     float: left;
-    width: 12vw;
+    width: 11.5vw;
     padding-left: 0.5vw;
     padding-right: 0;
     text-shadow: -3px 3px 4px #a4a4a4ba;
+    box-shadow: -4px 3px 12px 3px #7f7e7ea8;
+    padding: 2vh 1.8vw;
+    border: solid 1px #00000038;
+    border-radius: 1vw;
+    margin: 7vh 3vw 2vh;
+    background: #eafdff;
+    display: block;
+    /* transform: translateX(6vw); */
 }
 
 
-body>section, body>div>section{
-    box-shadow: -1px 4px 4px 2px #7f7e7e;
+body section, body section{
+    box-shadow: -4px 3px 12px 3px #7f7e7ea8;
     padding: 2vh 40px 42px 50px;
     border: solid 1px #00000038;
     border-radius: 5px;
-    margin: 4vh 1% 3% 1%;
+    margin: 2vh 1vw 3vh 1vw;
+    background: #ffffff;
+    display: inline-block;
+    width: 87vw;
 }
 section.normal{
     box-shadow:initial;
     padding: 0 3% 2.5vh 0%;
     border: initial;
     border-radius: initial;
+    background: inherit;
 }
 section.normal.table{
     box-shadow:initial;
@@ -53,8 +133,9 @@ section.normal.table{
     border: initial;
     border-radius: initial;
     float: right;
-    
     width: 76vw;
+    background: inherit;
+    display: contents;
 }
 h1, h2{
     font-family: 'Lobster', cursive;
@@ -77,7 +158,7 @@ nav,section,footer{
 }
 
 .upperfoot {
-    box-shadow: -10px 9px 20px 2px #7f7e7e;
+    box-shadow: -4px 3px 12px 3px #7f7e7ea8;
     padding: 13px 40px 42px 50px;
     border: solid 1px #00000038;
     border-radius: 5px;
@@ -123,18 +204,23 @@ nav > p {
     text-align: right;
 }
 
-
+div.bordertable{
+    border-left: 7px solid #531494;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    border-top-right-radius: 3px;
+    margin-top: 2vh;
+    overflow: hidden;
+    box-shadow: -4px 3px 12px 3px #7f7e7ea8;
+    margin-bottom: 5vh;
+    display: inline-block;
+}
 table{
      background: #e2d9ff;
-     border-left: 7px solid #531494;
      border-collapse: collapse;
-     display: inline-block;
-     border-top-left-radius: 27px;
-     border-bottom-left-radius: 27px;
-     border-top-right-radius: 3px;
-     margin-top: 2vh;
-     overflow: hidden;
-     box-shadow: -5px 6px 12px 5px #7f7e7e;
+     display: table;
+     width: 57vw;
+     height: 133vh;
 }
 th{
     border: 2px solid black;
@@ -238,57 +324,11 @@ a:hover{
     color:#3a1e4b;
     text-decoration: underline;
 }
-nav.top{
-    background-color: rgb(35, 35, 90);
-    /* border-bottom: 0.3vh; */
-    z-index: 20;
-    position: sticky;
-    top:0px;
-    padding-top: 0.3vh;
-}
-nav.indextop{
-    margin-bottom: 0 !important;
-}
-nav.top ul{
-   
-text-align: right;
-   
-margin-bottom: 0.1vh;
-   
-margin-top: 0.1vh;
-}
 
-nav.top li{
-   display: inline;
-   border-left: 1px solid black;
-   padding-left: 10px;
-   padding-bottom: 1vh;
-   margin-top: 1vh;
-}
- nav.top {
-    padding-bottom: 1vh;
-    margin-bottom: 1.5vh;
-}
-nav.top li{
-    padding-bottom: 0;
-    
-}
- nav.top li:first-child{
-    border-left: none;
-    padding-left: none;
-}
-nav.top a:link,nav.top a:visited,
-nav.top a:active{
-    color: rgb(252, 228, 255);
-    text-decoration: none;
-}
-nav.top a:hover{
-    color:#ce42ff9c;
-    text-decoration: underline;
-}
 div.body{
     margin-left: 5vw;
-    
+    /* position: relative; */
+    /* left: 8vw; */
 }
 div.body.works section{
     height: 67vh;
@@ -297,6 +337,8 @@ div.body.works section{
 div.herobanner{
   background: url(https://netology.ru/blog/wp-content/uploads/2021/04/christopher-gower-m_HRfLhgABo-unsplash-1-1-1.jpg);
   background-position:center;
+  background-blend-mode: color-burn;
+  background-color: #5e5e5e80;
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 0vw;
@@ -305,6 +347,7 @@ div.herobanner{
   position:relative;
   z-index:6;
   filter: brightness(87%);
+  margin-bottom: 4vh;
 }
 div.heroblock{
     position: inherit;
@@ -314,11 +357,15 @@ div.heroblock{
 }
 div.herotext{
    
-    text-shadow: -3px 3px 0px black, -1px -4px 3px #0a0909;
-    background: #1e31ff3d;
-    margin: 0 10vw;
-    border-radius: 61px;
-    padding: 1vh 0;
+text-shadow: -3px 3px 0px black, -1px -4px 3px #0a0909;
+   
+background: #000d9966;
+   
+margin: 0 10vw;
+   
+border-radius: 61px;
+   
+padding: 1vh 0;
 }
 div.herotext h1{
    color: rgb(255 255 255);
@@ -332,12 +379,12 @@ div.herobutton{
     top: 15vh;
 }
 div.herobutton button{
-    background-color: #9139e47d;
+    background-color: #9139e496;
     border-radius: 50px;
     padding: 1vh 1vw;
     color: #fff6f6;
 }
 div.herobutton button:hover{
-    background-color: #1e31ff3d;
+    background-color: #1e31ff66;
 }
 
